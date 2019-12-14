@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="signupUsername/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* gsap.to("body",{
+            duration: 0.5,
+            opacity: 1
+        })  */
+        const body = document.querySelector("body");
+
+        window.onload = ()=>{
+            setTimeout(function() {
+                    gsap.to(body,{
+                        duration: 0.5,
+                        opacity: 1
+                    })
+                    }, 1);
+            let submiton = document.getElementById("submit");
+            submiton.addEventListener("click", ()=>{
+                gsap.to(body,{
+                    duration: 0.5,
+                    opacity: 0
+                })
+                setTimeout(()=>{
+                    location.href = "/sp";
+                },500)
+                
+            })
+        };    
+    </script>
+    <p>give yourself a fancy username</p>
+    <form action="/action_page.php">
+        <input type="text" name="Name" value="" class="input" placeholder="Username"><br>
+        <div class="button" id="submit">
+            <input type="submit" value="OK" class="ok">
+            <img src="signupUsername/img/Vector.png" alt="" srcset="">
+        </div>
+        
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/gsap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        const body = document.querySelector("body");
+        const signup = document.querySelector(".signup");
+        signup.addEventListener("click", ()=>{
+            gsap.to(body,{
+                duration: 0.5,
+                opacity: 0
+            })
+            setTimeout(function() {
+                signup.setAttribute("href","/sn");
+            },1000);
+        })
+    </script> -->
+    <div class="main">
+        <p>Let us help you</p>
+        <h1>Become the new<br>You.</h1>
+        <a href="/li" class="login">Login</a>
+        <a id="signup" href="/sn" class="signup" >Signup</a>
+    </div>
+    <div class="logoover">
+        <img src="img/Rewire Logo Vertical.svg" alt="" class="logo" height = "400" width = "400">
+    </div>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
