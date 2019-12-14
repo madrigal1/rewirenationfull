@@ -5,7 +5,7 @@ const app = express();
 var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 const mongoose = require('mongoose');
-var dbURI = 'mongodb://localhost/Loc8r';
+var dbURI = 'mongodb://localhost/rewire';
 mongoose.connect(dbURI, {useNewUrlParser: true}).then(()=>{
   console.log("db.connected");
 }).catch(()=>{
